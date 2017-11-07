@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+  - "8"
+cache: yarn
+notifications:
+  email:
+    on_success: never
+    on_failure: always
