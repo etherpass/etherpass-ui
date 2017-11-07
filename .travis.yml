@@ -3,6 +3,8 @@ node_js:
   - "node"
   - "lts/*"
   - "8"
+env:
+- CI=true
 cache: yarn
 notifications:
   email:
