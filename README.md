@@ -3,10 +3,26 @@
 Etherpass all-in-one web and desktop application.
 
 ## Getting started
-It is recommended to use [yarn](yarnpkg.com) as a package manager
-- `yarn`
-- `yarn start`
 
-NPM workflow is also supported
+### Prerequisites
+- Vagrant
+- VirtualBox
+
+### Setting up VM for development
+```bash
+$ vagrant up
+$ vagrant ssh
+$ cd /vagrant # TODO auto cd; rename working directory
+```
+
+### NPM workflow:
 - `npm install`
 - `npm start`
+
+Visit http://localhost:5577/
+
+### [Yarn](yarnpkg.com) workflow:
+*NOTE: yarn package manager is not installed in the dev VM - this option implies you are running the application on your guest machine*
+
+- `yarn`
+- `yarn start`

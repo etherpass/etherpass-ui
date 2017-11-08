@@ -1,3 +1,6 @@
+# vm
+.vagrant
+
 # Logs
 logs
 *.log
@@ -53,9 +56,6 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variables file
-.env
 
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
