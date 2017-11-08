@@ -20,3 +20,9 @@ $ cd /vagrant # TODO auto cd; rename working directory
 - `npm start`
 
 Visit http://localhost:5577/
+
+### [Yarn](yarnpkg.com) workflow:
+*NOTE: yarn package manager is not installed in the dev VM - this option implies you are running the application on your guest machine*
+
+- `yarn`
+- `yarn start`
