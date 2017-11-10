@@ -23,6 +23,6 @@
     "prettier": "^1.8.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   }
 }
