@@ -3,7 +3,6 @@
 
 - name: Create .env
   import_tasks: env.yml
-  become: yes
 
 - name: Install Node.js
   import_tasks: install_node.yml
