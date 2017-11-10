@@ -1,0 +1,4 @@
+- template:
+    src: bash_profile.conf.j2
+    dest: ~/.bash_profile
+    # project_root: '{{ project_root }}'

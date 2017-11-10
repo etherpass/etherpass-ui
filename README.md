@@ -12,7 +12,6 @@ Etherpass all-in-one web and desktop application.
 ```bash
 $ vagrant up
 $ vagrant ssh
-$ cd /vagrant # TODO auto cd; rename working directory
 ```
 
 ### NPM workflow:
