@@ -1,4 +1,6 @@
 ---
 - hosts: all
+  vars:
+    project_root: /etherpass/ui
   roles:
     - common
