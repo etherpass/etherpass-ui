@@ -1,19 +1,37 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, {injectGlobal} from 'styled-components';
+import {normalize, transitions, modularScale} from 'polished';
+import {Button, GhostButton, OutlinedButton} from './components/Button';
+
+const Shell = styled.div`
+  min-height: 100vh;
+  padding: 1rem;
+`;
+
+injectGlobal`
+  @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Open+Sans|Roboto');
+  ${normalize()};
+  * {
+    /* ${transitions('all 0.8s ease')}; */
+    color: #3c4858;
+  }
+  h1, h2, h3, h4, strong, b {
+    font-family: 'Barlow Condensed'
+  }
+  button, input, a, textarea, select, p, div, ul, small {
+    font-family: 'Roboto'
+  }
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Shell>
+        <h1>Etherpass</h1>
+        <Button>Primary</Button>
+        <GhostButton>Ghost</GhostButton>
+        <OutlinedButton>Outlined</OutlinedButton>
+      </Shell>
     );
   }
 }

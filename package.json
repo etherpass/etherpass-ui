@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "polished": "^1.9.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.17",
-    "rebass": "^1.0.4",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "styled-components": "^2.2.3"
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -23,6 +24,9 @@
     "prettier": "^1.8.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
