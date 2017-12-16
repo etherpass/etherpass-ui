@@ -4,6 +4,7 @@ import {rem, borderRadius, borderWidth, shade} from 'polished';
 const allSides = ['top', 'right', 'bottom', 'left'];
 
 export const Button = styled.button`
+  display: inline-block;
   background: #1fb6ff;
   ${allSides.map(s => borderRadius(s, '4px'))};
   ${borderWidth(0)};

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styled, {injectGlobal} from 'styled-components';
 import {normalize, transitions, modularScale} from 'polished';
 import {Button, GhostButton, OutlinedButton} from './components/Button';
+import {Link} from './components/Link';
 
 const Shell = styled.div`
   min-height: 100vh;
@@ -31,6 +32,9 @@ class App extends Component {
         <Button>Primary</Button>
         <GhostButton>Ghost</GhostButton>
         <OutlinedButton>Outlined</OutlinedButton>
+        <Link>Outlined</Link>
+        <Link dark>Outlined</Link>
+        <Link light>Outlined</Link>
       </Shell>
     );
   }
