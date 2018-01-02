@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {rem, borderRadius, borderWidth, shade} from 'polished';
+import {rem, borderRadius, borderWidth} from 'polished';
 
 const allSides = ['top', 'right', 'bottom', 'left'];
 
