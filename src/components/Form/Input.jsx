@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+const boxShadow = color =>
+  css`
+    box-shadow: inset 0 0 0 1px ${color};
+  `;
 
 const Input = styled.input`
   padding: 0 1rem;
@@ -10,6 +15,12 @@ const Input = styled.input`
   outline-style: none;
   font-weight: 300;
   height: 40px;
+  &:hover {
+    ${boxShadow('#c0ccda')};
+  }
+  &:focus {
+    ${boxShadow('#1fb6ff')};
+  }
 `;
 
 export default Input;

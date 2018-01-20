@@ -5,9 +5,6 @@ import styled, {css} from 'styled-components';
 const activeStyle = css`
   background: #f9fafc;
   border-radius: 4px;
-  a {
-    color: #1fb6ff;
-  }
 `;
 
 const SidebarItem = ({title, active, children, onClick, className}) => (
